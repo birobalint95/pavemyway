@@ -57,6 +57,8 @@
     max-width: 120px;
     transform: rotate(8deg);
     display: inline-block;
+    transform: perspective(800px) rotateY(15deg) rotateX(10deg);
+    background: linear-gradient(120deg, #d68d41, #5d9d6b);
 }
   
 .banner .second.question {
@@ -64,11 +66,15 @@
     max-width: 120px;
     transform: rotate(-8deg);
     display: inline-block;
+    transform: perspective(800px) rotateY(-15deg) rotateX(10deg);
+    background: linear-gradient(240deg, #d68d41, #5d9d6b);
 }
   
 .banner .third.question {
     max-width: 60%;
     margin-left: 20%;
+    transform: perspective(800px) rotateY(0deg) rotateX(20deg);
+    background: linear-gradient(0deg, #d68d41, #5d9d6b);
 }
 
 .about {
@@ -86,4 +92,26 @@
 
 .about .contentBx h2 {
     font-size: 40px;
+}
+
+@media (max-width: 1000px) {
+    .banner .content {
+        margin-left: 0%;
+    }
+
+    .banner img {
+        object-position: right bottom;
+    }
+
+    .banner .content h2 {
+        font-size: 40px;
+    }
+    
+    .banner .content p {
+        font-size: 15px;
+    }
+
+    .banner .question {
+        font-size: 14px;
+    }
 }
