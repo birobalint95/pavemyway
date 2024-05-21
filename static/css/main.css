@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #9e9d9d;
+    display: flex;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.banner .content {
+    position: relative;
+    max-width: 400px; 
+    text-align: center;
+  margin-left: 6%;
+}
+
+.banner .content h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.banner .content p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner .question1 {
+  padding-top: 80px;
+  max-width: 120px;
+  transform: rotate(8deg);
+  display: inline-block;
+}
+
+.banner .question2 {
+  padding-top: 80px;
+  padding-left: 50px;
+  max-width: 150px;
+  transform: rotate(-8deg);
+  display: inline-block;
+}
+
+.banner .question3 {
+  padding-top: 50px;
+  max-width: 70%;
+  padding-left: 30%;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* font-family: 'Jungle Roar'; */
+}
+  
+.about .contentBx {
+    background: #00211c;
+    padding: 100px;
+    color: #d68d41;
+}
+
+.about .contentBx h2 {
+    font-size: 40px;
+}
