@@ -23,14 +23,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.25;
+    opacity: 0.65;
 }
 
 .banner .content {
     position: relative;
     max-width: 400px; 
     text-align: center;
-  margin-left: 6%;
+    margin-left: 6%;
+    background: radial-gradient(circle, rgba(0,0,0,1), rgba(0,0,0,0.65), rgba(0,0,0,0));
+    height: 100%;
+    padding-top: 20vh;
 }
 
 .banner .content h2 {
@@ -43,25 +46,29 @@
     font-size: 18px;
 }
 
-.banner .question1 {
-  padding-top: 80px;
-  max-width: 120px;
-  transform: rotate(8deg);
-  display: inline-block;
+.banner .question {
+    background: #d68d41;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
 }
-
-.banner .question2 {
-  padding-top: 80px;
-  padding-left: 50px;
-  max-width: 150px;
-  transform: rotate(-8deg);
-  display: inline-block;
+  
+.banner .first.question {
+    max-width: 120px;
+    transform: rotate(8deg);
+    display: inline-block;
 }
-
-.banner .question3 {
-  padding-top: 50px;
-  max-width: 70%;
-  padding-left: 30%;
+  
+.banner .second.question {
+    margin-left: 50px;
+    max-width: 120px;
+    transform: rotate(-8deg);
+    display: inline-block;
+}
+  
+.banner .third.question {
+    max-width: 60%;
+    margin-left: 20%;
 }
 
 .about {
